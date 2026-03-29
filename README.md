@@ -56,13 +56,26 @@ node_modules/                  # Linked via Docker volumes for dev hot reload
 
 ## ⚙️ Getting Started
 
-TBD
+1. Install dependencies
+    - Docker
+
+2. Clone repo
+
 
 ### Run locally
 
-docker compose up --build   # forcing rebuild of containers
+- Clone Repo
+- Setup your .env file
+```bash
+NODE_ENV=development
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=yourpassword
+POSTGRES_DB=app_db
+```
 
-docker compose up           # start up environment without rebuild
+- Run environment
+    - docker compose up --build   # forcing rebuild of containers
+    - docker compose up           # start up environment without rebuild
 
 ## 🧠 Design Notes
 
