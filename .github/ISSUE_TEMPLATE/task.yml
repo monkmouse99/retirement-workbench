@@ -1,6 +1,6 @@
 name: ✅ Task
 description: Track a piece of work that isn't a bug or a new feature
-labels: ["task"]
+labels: ["type: task", "status: triage", "priority: P2"]
 body:
   - type: input
     id: task-summary
