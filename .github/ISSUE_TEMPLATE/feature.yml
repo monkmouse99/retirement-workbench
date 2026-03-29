@@ -1,0 +1,17 @@
+name: Feature Request
+description: Suggest an idea for this project
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      placeholder: What should this do?
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Acceptance Criteria
+      options:
+        - label: Task 1
+        - label: Task 2
