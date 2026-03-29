@@ -4,12 +4,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files (keep commented for now if no public folder)
-// app.use(express.static(path.join(__dirname, 'public')));
+// Serve everything in the 'public' folder as static files
+app.use(express.static(path.join(__dirname, 'public')));
 
-// ✅ Single catch-all handler
+// Catch-all: send index.html for any route (SPA support)
 app.use((req, res) => {
-  res.send('Hello from frontend!');
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(PORT, () => {
