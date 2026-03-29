@@ -24,6 +24,7 @@ A full-stack application for building and analyzing retirement portfolios, inclu
 * `/database` – schema and migrations
 * `/docs` – design decisions and architecture
 
+```text
 retirement-workbench/
 │
 ├── docker-compose.yml        # Orchestrates all containers (frontend, backend, db)
@@ -51,7 +52,7 @@ retirement-workbench/
 
 volumes/                       # Managed by Docker
 node_modules/                  # Linked via Docker volumes for dev hot reload
-
+```
 
 ## ⚙️ Getting Started
 
