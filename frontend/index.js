@@ -5,7 +5,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
+app.use((req, res) => {
+  res.send('Hello from frontend!');
+});
+
 
 // Fallback (optional but nice)
 app.get('/*', (req, res) => {
@@ -15,3 +19,4 @@ app.get('/*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
+
