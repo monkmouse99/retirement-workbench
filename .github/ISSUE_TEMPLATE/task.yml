@@ -1,0 +1,25 @@
+name: ✅ Task
+description: Track a piece of work that isn't a bug or a new feature
+labels: ["task"]
+body:
+  - type: input
+    id: task-summary
+    attributes:
+      label: Task Summary
+      placeholder: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: task-details
+    attributes:
+      label: Details/Context
+      placeholder: Why is this task necessary? What are the technical specifics?
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Action Items
+      options:
+        - label: Define technical requirements
+        - label: Implementation
+        - label: Add unit tests
+        - label: Update documentation
