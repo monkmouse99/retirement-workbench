@@ -1,0 +1,11 @@
+# Disables the "Open a blank issue" button
+blank_issues_enabled: false
+
+# Adds helpful external links to the "New Issue" page
+contact_links:
+  - name: 💬 Community Discussions
+    url: https://github.com/monkmouse99/retirement-workbench/discussions
+    about: Ask a question or chat with the community instead of opening a bug.
+  - name: 📖 Documentation
+    url: https://github.com/monkmouse99/retirement-workbench/tree/main/docs
+    about: Please check the docs before reporting an issue!
